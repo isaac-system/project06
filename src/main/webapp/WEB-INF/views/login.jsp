@@ -123,7 +123,7 @@ td {
 				   }
 	            },
 	            error: function (err) {
-	            	alert("로그인 하셔")
+	            	alert("로그인 하세요.")
 	                console.log(err)
 	            }
 			   
@@ -247,7 +247,7 @@ function canLog(){
 										<div class="mb-3">
 											<label class="text-gray-600 small" for="passwordExample">Password</label>
 											<input id="pass" class="form-control form-control-solid"
-												onkeyup="enterkey()" name="pass" type="password" aria-label="Password"
+												name="pass" type="password" aria-label="Password"
 												aria-describedby="passwordExample" value="${member.pass }" />
 										</div>
 										<!-- Form Group (forgot password link)-->

@@ -28,18 +28,8 @@ INSERT INTO member06 values(NO_seq.nextval,1,'abc123@naver.com','1111','홍길�
 INSERT INTO member06 values(NO_seq.nextval,2,'def123@naver.com','2222','박추자','user','010-1111-1111','차장');	
 INSERT INTO member06 values(NO_seq.nextval,3,'def1234@naver.com','2222','아저씨','user','010-2222-2222','대리');	
 INSERT INTO member06 values(NO_seq.nextval,3,'kkk1@naver.com','3333','아줌마','admin','010-2222-2222','사원');	
-INSERT INTO member06 values(NO_seq.nextval,2,'kkk2@naver.com','4444','이모','admin','010-0101-2222','대리');	
-INSERT INTO member06 values(NO_seq.nextval,1,'kkk3@naver.com','5555','사이다','user','010-2222-9999','차장');	
-INSERT INTO member06 values(NO_seq.nextval,5,'kkk4@naver.com','6666','커피','PM','010-9999-2222','사원');	
-INSERT INTO member06 values(NO_seq.nextval,7,'kkk5@naver.com','7777','키보드','user','010-2222-7777','차장');	
-INSERT INTO member06 values(NO_seq.nextval,8,'kkk6@naver.com','8888','마우스','PM','010-2222-0101','대리');	
-INSERT INTO member06 values(NO_seq.nextval,5,'kkk7@naver.com','9999','사장님','admin','010-2222-2222','대리');	
-INSERT INTO member06 values(NO_seq.nextval,2,'kkk8@naver.com','1234','나이스샷','admin','010-0101-7777','대리');	
-INSERT INTO member06 values(NO_seq.nextval,1,'kkk9@naver.com','5678','언니','user','010-7777-2222','대리');	
-INSERT INTO member06 values(NO_seq.nextval,9,'kkk10@naver.com','0101','누나','PM','010-9999-2222','대리');	
-INSERT INTO member06 values(NO_seq.nextval,10,'kkk11@naver.com','123','핸드폰','admin','010-9999-2222','대리');	
-INSERT INTO member06 values(NO_seq.nextval,'','kkk12@naver.com','123','핸드폰','PM','010-9999-2222','대리');	
-INSERT INTO member06 values(NO_seq.nextval,'','cba123@naver.com','123','핸드폰','PM','010-9999-2222','대리','/asset/images/profile-1.png');	
+
+	
 -- 사원번호, 부서번호, 이메일, 비밀번호, 이름, 권한, 핸드폰번호, 직책
 INSERT INTO member06 values(NO_seq.nextval,
 (SELECT deptno FROM dept06 WHERE dept = '재무' AND comno = (SELECT comno FROM company06 WHERE companyName = '삼성'))
